@@ -1,0 +1,55 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.35;
+  border-right: 1px solid #80808060;
+  .header {
+    background-color: #ebebeb;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .avatar {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .menu {
+      &_icon {
+        font-size: 1rem;
+        color: #343434;
+      }
+    }
+  }
+  .search {
+    padding: 0.5rem;
+    border-bottom: 1px solid #80808060;
+    &_container {
+      background-color: #ebebeb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1rem;
+    }
+    .search_icon {
+      font-size: 0.8rem;
+      margin-left: 20px;
+      color: #a8a8a8;
+    }
+    .search_input {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border: none;
+      outline: none;
+      background-color: inherit;
+      border-radius: inherit;
+      font-size: 0.6rem;
+      &::placeholder {
+        color: #a8a8a8;
+      }
+    }
+  }
+  .chats_list {
+    max-height: 60vh;
+    overflow-y: scroll;
+  }
+}

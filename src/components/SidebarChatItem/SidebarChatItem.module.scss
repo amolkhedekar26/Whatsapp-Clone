@@ -1,0 +1,40 @@
+.chat_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:hover{
+    background-color: #ebebeb;
+  }
+  &.active{
+    background-color: #ebebeb;
+  }
+  .chat_info_container {
+    display: flex;
+    .avatar {
+      display: flex;
+      align-items: center;
+      .profile_pic {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+    .chat_info {
+      margin-left: 0.5rem;
+      .username {
+        font-size: 0.675rem;
+      }
+      .last_message {
+        font-size: 0.5rem;
+        color: rgba(35, 35, 35, 0.75);
+      }
+    }
+  }
+  .chat_time {
+    .recent_time {
+      font-size: 0.45rem;
+      color: rgba(0, 0, 0, 0.75);
+    }
+  }
+}
